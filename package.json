@@ -2,7 +2,7 @@
   "name": "newengen",
   "version": "0.0.1",
   "description": "A Collaboration tool for New Engen",
-  "repository": "https://github.com/ramvinoth/fivetrippycuisiners",
+  "repository": "https://github.com/ramvinoth/newengen",
   "main": "index.js",
   "engines": {
     "node": "12.13.0"

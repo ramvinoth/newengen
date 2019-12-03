@@ -6,7 +6,7 @@ module.exports = {
   IMG_STATIC_URL: 'http://www.tamizhans.in/image.php',
   REQUESTS_DELAY_SYSTEM: 0,
   baseURL: (process.env.BASEURL || 'https://new-engen.herokuapp.com'),
-  db: 'mongodb://viyabiz_vinz:viyaSmart$6@ds157735.mlab.com:57735/newengen',
+  db: 'mongodb://viyabiz_vinz:viyaSmart$6@ds251618.mlab.com:51618/newengen',
   server: {
     host: process.env.SERVER ||'https://new-engen.herokuapp.com',
     port: process.env.PORT
