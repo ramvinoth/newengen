@@ -1,0 +1,24 @@
+<div ng-controller="ActivitiesCtrl">
+  
+  <div class="activities-listing">
+    <md-card ng-show="newActivitiesCount">
+      <md-button ng-click="updateActivities()" class="md-primary md-raised">Load New Items ({{newActivitiesCount}})</md-button>
+    </md-card>
+    <md-item ng-repeat="item in actions">
+      <md-item-content class="single-activity">
+        <p class="primaryColors">
+          <small class="mute">{{::item.created | date:'short'}}</small>
+          <span>
+            
+            <span ng-if="item.action=='like'">Liked this </span>
+            <span ng-if="item.action=='unlike'">Removed my like from this </span>
+            <span ng-if="item.action=='comment'">Commented on this </span>
+            <span ng-if="item.action=='newpost'">Written a new </span>
+            Post.
+          </span>
+        </p>
+          
+      </md-item-content>
+    </md-item>
+  </div>
+</div>
