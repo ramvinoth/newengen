@@ -5,13 +5,13 @@ module.exports = {
   IMG_STATIC: 'http://www.tamizhans.in',
   IMG_STATIC_URL: 'http://www.tamizhans.in/image.php',
   REQUESTS_DELAY_SYSTEM: 0,
-  baseURL: (process.env.BASEURL || 'https://unccconnect.herokuapp.com'),
-  db: 'mongodb://viyabiz_vinz:viyaSmart$6@ds157735.mlab.com:57735/unccconnect',
+  baseURL: (process.env.BASEURL || 'https://new-engen.herokuapp.com'),
+  db: 'mongodb://viyabiz_vinz:viyaSmart$6@ds157735.mlab.com:57735/newengen',
   server: {
-    host: process.env.SERVER ||'https://unccconnect.herokuapp.com',
+    host: process.env.SERVER ||'https://new-engen.herokuapp.com',
     port: process.env.PORT
   },
-  secret: 'unccconnectsecret',
+  secret: 'newengensecret',
   settings: {
   	perPage: 10,
   	email: {

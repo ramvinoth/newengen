@@ -1,7 +1,7 @@
 {
-  "name": "unccconnect",
+  "name": "newengen",
   "version": "0.0.1",
-  "description": "A social network for foodies like you and me",
+  "description": "A Collaboration tool for New Engen",
   "repository": "https://github.com/ramvinoth/fivetrippycuisiners",
   "main": "index.js",
   "engines": {
@@ -13,13 +13,13 @@
     "karma": "node node_modules/karma/bin/karma start karma.conf.js",
     "mocha": "./node_modules/.bin/istanbul cover --report html node_modules/.bin/_mocha -- ./modules/**/server/tests/**/*.js -R spec -r tools/test/mocha-req.js",
     "test": "npm run mocha  && npm run karma",
-    "postinstall": "./node_modules/bower/bin/bower install"
+    "postinstall": "node.exe node_modules/bower/bin/bower install"
   },
   "author": "Ram Vinoth",
   "license": "MIT",
   "dependencies": {
     "async": "^2.6.3",
-    "aws-sdk": "^2.578.0",
+    "aws-sdk": "^2.582.0",
     "body-parser": "^1.19.0",
     "bower": "^1.8.8",
     "ejs": "^2.7.4",

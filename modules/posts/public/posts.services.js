@@ -222,10 +222,10 @@ angular.module('atwork.posts')
               var singleRecord = timelineData.res.record;
               MetaTagsService.setTags({
                 // General SEO
-                'title': "UNCC Connect",
+                'title': "New Engen",
                 // OpenGraph
                 'og:type': 'Post',
-                'og:url': 'https://unccconnect.herokuapp.com/post/'+singleRecord._id,
+                'og:url': 'https://new-engen.herokuapp.com/post/'+singleRecord._id,
                 'og:title': singleRecord.stream.title,
                 'og:description': singleRecord.content,
                 //'og:image': singleRecord.image,

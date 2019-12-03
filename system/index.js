@@ -84,7 +84,7 @@ function startServer() {
     var host = server.address().address
     var port = server.address().port
 
-    console.log('UNCC App running at http://%s:%s', host, port);
+    console.log('New Engen App running at http://%s:%s', host, port);
   });
 }
 
@@ -315,7 +315,7 @@ module.exports = {
       res.render('public/bot.html', 
         { 
           img : img, 
-          url : 'https://unccconnect.herokuapp.com/', 
+          url : 'https://new-engen.herokuapp.com/', 
           title : post.title, 
           description : post.short_desc, 
           imageUrl : 'https://bot-social-share.herokuapp.com'+img 

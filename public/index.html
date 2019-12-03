@@ -11,7 +11,7 @@
           gtag('config', 'UA-99087345-4');
         </script>
         <meta name="fragment" content="!">
-        <link rel="SHORTCUT ICON" href="/images/uncc.ico" />
+        <link rel="SHORTCUT ICON" href="/images/favicon-32.ico" />
         <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no" />
         <meta name="apple-mobile-web-app-capable" content="yes">
         <meta name="apple-mobile-web-app-status-bar-style" content="black">
@@ -22,14 +22,14 @@
         <link rel='stylesheet' href='/bower_components/summernote/dist/summernote.css'>
         
         <base href="/"></base>
-        <title ng-bind="systemSettings ? systemSettings.workplace : 'UNCC'">UNCC Connect</title>
+        <title ng-bind="systemSettings ? systemSettings.workplace : 'New Engen'">New Engen Connect</title>
     </head>
     <body layout="row" ng-controller="AppCtrl">
       <!-- new deployment: 25, May, 2015!! -->
       <div class="preloader" ng-if="!appReady">
         <div class="preloader-content">
-          <img src="images/logo.png" width="300">
-          <h1>Niners!</h1>
+          <img src="images/new-engen.png" width="300">
+          <h1>Hello folks!</h1>
           <p>Hold on, tightly...</p>
         </div>
       </div>
@@ -38,8 +38,8 @@
           <button ng-click="toggleSidenav('left')" hide-gt-sm class="menuBtn" ng-if="isLoggedIn">
             <span class="visuallyhidden">Menu</span>
           </button>
-          <span><img src="images/uncc_49.png" ng-click="goHome($event)" width="50px" height="auto"/></span>
-          <h1>{{systemSettings ? systemSettings.workplace : 'UNCC Connect'}}</h1>
+          <span><img src="images/download.svg" ng-click="goHome($event)" width="50px" height="auto"/></span>
+          <h1>{{systemSettings ? systemSettings.workplace : 'New Engen Connect'}}</h1>
         </md-toolbar>
         <div class="md-padding sidebar-list" layout-padding>
             <div ng-include="'/system/public/views/search.html'"></div>
@@ -67,7 +67,7 @@
                 <md-button class="md-old-style" ng-if="isLoggedIn" ng-click="goHome($event)" title="Home" aria-label="Home">
                   <md-inline-list-icon class="fa fa-globe"></md-inline-list-icon>
                 </md-button>
-                <span hide-sm ng-if="!isLoggedIn">{{systemSettings ? systemSettings.workplace : 'UNCC Connect'}}</span>
+                <span hide-sm ng-if="!isLoggedIn">{{systemSettings ? systemSettings.workplace : 'New Engen Connect'}}</span>
                 <span hide-sm hide-md class="tiny" flex>&nbsp; {{barTitle}}</span>
                 <span flex hide-md></span>
                 <md-button class="md-old-style" ng-if="isLoggedIn && (user.roles.indexOf('admin') !== -1)" href="/settings" title="Settings" aria-label="Settings">

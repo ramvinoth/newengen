@@ -204,10 +204,10 @@ angular.module('atwork.blogs')
               var singleRecord = timelineData.res.record;
               MetaTagsService.setTags({
                 // General SEO
-                'title': "UNCC Social Network",
+                'title': "New Engen",
                 // OpenGraph
                 'og:type': 'Blog',
-                'og:url': 'https://unccconnect.herokuapp.com/blog/'+singleRecord._id,
+                'og:url': 'https://new-engen.herokuapp.com/blog/'+singleRecord._id,
                 'og:title': singleRecord.title,
                 'og:description': singleRecord.short_desc,
                 //'og:image': singleRecord.image,

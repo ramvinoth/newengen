@@ -14,7 +14,7 @@ var app = angular.module('AtWork', [
   'satellizer',
 ]).config(['$qProvider','$routeProvider','ngMetaProvider', '$authProvider', function ($qProvider, $routeProvider, ngMetaProvider, $authProvider) {
   $qProvider.errorOnUnhandledRejections(false);
-  ngMetaProvider.setDefaultTitle('First ever social network for UNCC');
+  ngMetaProvider.setDefaultTitle('First ever collaboration tool for New Engen');
   ngMetaProvider.setDefaultTag('description', 'Together we make Charlotte Thrive');
   $authProvider.facebook({
     clientId: '183663679128594',
@@ -79,13 +79,13 @@ var app = angular.module('AtWork', [
   ngMeta.init();
   MetaTagsService.setDefaultTags({
     // General SEO
-    'og:title': 'First ever social network for UNCC',
+    'og:title': 'First ever collaboration tool for New Engen',
     'author': 'admin',
     'og:description': 'Taking TN to the next level',
-    //'og:url': 'https://unccconnect.herokuapp.com/',
+    //'og:url': 'https://new-engen.herokuapp.com/',
     'og:type': 'website',
     'og:app_id': '183663679128594',
-    'og:image': 'https://unccconnect.herokuapp.com/images/anbendru_bharathiaar.png',
+    'og:image': 'https://new-engen.herokuapp.com/images/anbendru_bharathiaar.png',
     'og:image:width': '680',
     'og:image:height': '340',
     // Indexing / Spiders
@@ -93,9 +93,9 @@ var app = angular.module('AtWork', [
     'bingbot': 'all',
     'robots': 'all',
     // OpenGraph
-    'og:site_name': 'UNCC Social Network',
+    'og:site_name': 'New Engen',
     // Twitter
-    'twitter:site': '@unccconnect',
+    'twitter:site': '@newengen',
   });
 }]);
 app.controller('AppCtrl', [
