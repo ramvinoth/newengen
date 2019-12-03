@@ -26,14 +26,15 @@
             </div>
           </md-input-container>
           <div ng-controller="GalleryCtrl">
-            <input type="file" ng-file-select ng-accept="'image/*'" fileinput="file" ng-model-instant onchange="angular.element(this).scope().imageUpload(event)">
+            <input type="file" id="file" ng-file-select ng-accept="'image/*'" fileinput="file" ng-model-instant onchange="angular.element(this).scope().imageUpload(event)">
+            <label for="file" class="btn-3"><span>Choose image</span></label>
+            <md-button class="md-primary md-raised">
+              Share
+            </md-button>
             <div class="col-md-6">
               <img ng-src="{{filesrc}}" ng-repeat="filesrc in filesSrc" class="img-responsive preview-img" ng-show="filesrc" ng-model="filesSrc" ng-click="imagePop($event, filesSrc)"/>
             </div>
           </div>
-          <md-button class="md-primary md-raised">
-            Share
-          </md-button>
           <md-button class="md-raised" ng-click="reset()" ng-if="postForm.$submitted && postForm.$invalid">
             Cancel
           </md-button>

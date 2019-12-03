@@ -778,9 +778,79 @@ blockquote.style2 {
 .newengen_color{
   background-color: #1D4091!important;
 }
+/*Overwrite colors temporary*/
 md-tabs.md-accent md-tabs-wrapper{
   background-color: #1D4091!important;
 }
 .md-primary.md-raised.md-button.md-default-theme{
   background-color: #1D4091!important;
+  position: relative;
+  top: -5px;
+  padding: 2px;
+}
+}
+md-tabs.md-accent md-tab-item:not([disabled]) {
+  color: #cce2fa!important;
+}
+
+[type="file"] {
+  height: 0;
+  overflow: hidden;
+  width: 0;
+}
+
+[type="file"] + label {
+  background: #f15d22;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: inherit;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  outline: none;
+  padding: 0.7rem 15px;
+  position: relative;
+  transition: all 0.3s;
+  vertical-align: middle;
+}
+[type="file"] + label:hover {
+  background-color: #4e84ff;
+}
+[type="file"] + label.btn-3 {
+  background-color: #4e84ff;
+  border-radius: 0;
+  overflow: hidden;
+}
+[type="file"] + label.btn-3 span {
+  display: inline-block;
+  height: 100%;
+  transition: all 0.3s;
+  width: 100%;
+}
+[type="file"] + label.btn-3::before {
+  color: #fff;
+  content: "\f093";
+  font-family: "FontAwesome";
+  font-size: 130%;
+  height: 100%;
+  left: 0;
+  line-height: 2.6;
+  position: absolute;
+  top: -180%;
+  transition: all 0.3s;
+  width: 100%;
+  text-align: center;
+}
+[type="file"] + label.btn-3:hover {
+  background-color: #1D4091;
+}
+[type="file"] + label.btn-3:hover span {
+  -webkit-transform: translateY(300%);
+          transform: translateY(300%);
+}
+[type="file"] + label.btn-3:hover::before {
+  top: 0;
 }
