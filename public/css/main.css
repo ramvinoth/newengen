@@ -788,9 +788,8 @@ md-tabs.md-accent md-tabs-wrapper{
   top: -5px;
   padding: 2px;
 }
-}
 md-tabs.md-accent md-tab-item:not([disabled]) {
-  color: #cce2fa!important;
+  color: #fff!important;
 }
 
 [type="file"] {
