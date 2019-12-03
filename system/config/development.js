@@ -6,12 +6,12 @@ module.exports = {
   IMG_STATIC_URL: 'http://www.tamizhans.in/image.php',
   REQUESTS_DELAY_SYSTEM: 0,
   baseURL: 'http://localhost:8181',
-  db: process.env.MONGOHQ_URL || 'mongodb://' + (process.env.DB_PORT_27017_TCP_ADDR || 'localhost') + '/trippycuisiners',
+  db: process.env.MONGOHQ_URL || 'mongodb://' + (process.env.DB_PORT_27017_TCP_ADDR || 'localhost') + '/newengen',
   server: {
     host: 'localhost',
     port: '8181'
   },
-  secret: 'trippycuisinerssecret',
+  secret: 'newengensecret',
   settings: {
   	perPage: 10,
   	email: {

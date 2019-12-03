@@ -440,7 +440,7 @@ ul.unstyled {
   padding: 24px; }
 
 md-toolbar.md-default-theme {
-  background-color: rgba(0,69,37,1); }
+  background-color: #1D4091; }
 
 md-dialog md-dialog-content {
   padding: 0; }
@@ -726,8 +726,10 @@ md-item-content {
   height: 100%; }
 
 .img-hauto {
-  width: 100%;
-  height: auto; }
+  width: 75%;
+  height: auto;
+  margin: 0 10%;
+}
 
 *:focus {
   outline: none !important;
@@ -773,6 +775,12 @@ blockquote.style2 {
 .inline-block {
   display: inline-block; }
 
-.uncc_color{
-  background-color: rgba(0,69,37,1) !important;
+.newengen_color{
+  background-color: #1D4091!important;
+}
+md-tabs.md-accent md-tabs-wrapper{
+  background-color: #1D4091!important;
+}
+.md-primary.md-raised.md-button.md-default-theme{
+  background-color: #1D4091!important;
 }
