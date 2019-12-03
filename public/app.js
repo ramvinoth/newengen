@@ -79,9 +79,9 @@ var app = angular.module('AtWork', [
   ngMeta.init();
   MetaTagsService.setDefaultTags({
     // General SEO
-    'og:title': 'First ever collaboration tool for New Engen',
+    'og:title': 'New Engen Connect',
     'author': 'admin',
-    'og:description': 'Taking TN to the next level',
+    'og:description': 'Group of passionate developers',
     //'og:url': 'https://new-engen.herokuapp.com/',
     'og:type': 'website',
     'og:app_id': '183663679128594',
